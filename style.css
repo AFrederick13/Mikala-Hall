@@ -255,6 +255,13 @@ footer a {
     section,
     footer {
         min-height: auto;
+        /* On mobile, scale the background to be wider than the screen for a
+           slight zoom effect, while still allowing it to repeat. This is a
+           compromise between 'cover' and '100% auto'. */
+        background-size: 150% auto;
+        background-position: center top;
+        background-repeat: repeat-y; /* Repeat the background vertically */
+        /* Align the image to the top */
         padding: 60px 20px;
     }
 
