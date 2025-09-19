@@ -96,6 +96,7 @@ h4 {
     /* Set a max-width for large screens */
     width: 90%;
     /* Make the grid responsive to screen size */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 .event-grid h2 {
@@ -171,6 +172,7 @@ h4 {
     border-radius: 20px;
     background-color: rgba(10, 10, 10, 0.7);
     padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 
 }
 
