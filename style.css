@@ -78,7 +78,7 @@ h4 {
 .event-grid {
     border: 2px solid #f0ebe1;
     border-radius: 20px;
-    background-color: rgba(10, 10, 10, 0.7);
+    background-color: rgba(201, 201, 201, 0.7);
     /* Semi-transparent dark background */
     box-shadow: 5px 5px 5px black, -5px -5px 5px black;
     color: #f0ebe1;
@@ -171,7 +171,7 @@ h4 {
 .reading-text {
     border: 2px solid #f0ebe1;
     border-radius: 20px;
-    background-color: rgba(10, 10, 10, 0.7);
+    background-color: rgba(201, 201, 201, 0.7);
     padding: 20px;
     box-sizing: border-box; /* Include padding and border in the element's total width */
 
@@ -184,7 +184,7 @@ h4 {
     border: 2px solid #f0ebe1;
     border-radius: 20px;
     padding: 10px;
-    background-color: rgba(10, 10, 10, 0.7);
+    background-color: rgba(201, 201, 201, 0.7);
 }
 
 .reading-text h2 {
@@ -205,7 +205,7 @@ h4 {
     border: 2px solid #f0ebe1;
     border-radius: 20px;
     padding: 10px;
-    background-color: rgba(10, 10, 10, 0.7);
+    background-color: rgba(201, 201, 201, 0.7);
 }
 
 #supportgroups img {
