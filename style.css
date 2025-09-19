@@ -71,6 +71,12 @@ h4 {
     margin-top: 8px;
 }
 
+.SunBurst img {
+    display: block;
+    margin: 0 auto 20px;
+    /* Center the image and add space below */
+}
+
 .event-grid {
     border: 2px solid #f0ebe1;
     border-radius: 20px;
@@ -137,21 +143,6 @@ h4 {
     /* Prevents the date from shrinking if the location is long */
 }
 
-/* Media Query for smaller screens */
-/* @media (max-width: 480px) {
-    .event-item {
-        flex-direction: column;
-        /* Stack date and location vertically */
-/* align-items: flex-start; */
-/* Align text to the left */
-/* }
-
-    /* .event-item p {
-        text-align: left;
-        /* Align location to the left on small screens */
-/* }  
-} 
-
 /* --- Readings Section --- */
 
 .reading-item-container {
@@ -168,7 +159,9 @@ h4 {
 }
 
 .reading-item img {
-    width: 500px;
+    max-width: 500px;
+    /* Make image responsive by default */
+    width: 100%;
     height: auto;
     border-radius: 15px;
     flex-shrink: 0;
@@ -237,27 +230,6 @@ h4 {
     /* Creates space between "Merchandise" and "Coming Soon!" */
 }
 
-/* Make the readings section responsive */
-@media (max-width: 768px) {
-    .reading-item {
-        flex-direction: column;
-        /* Stack image and text vertically */
-        text-align: center;
-    }
-
-    .reading-item img {
-        width: 80%;
-        max-width: 250px;
-    }
-
-    /* --- Responsive Typography --- */
-    h1,
-    .event-grid h2 {
-        font-size: 3rem;
-        /* Reduce large heading font size on smaller screens */
-    }
-}
-
 #contact h1 {
     margin-bottom: 30px;
     /* Adds space below the "Contact" title */
@@ -271,4 +243,57 @@ h4 {
 
 footer a {
     color: lightskyblue;
+}
+
+/* --- Responsive Design --- */
+
+/* Medium screens and tablets */
+@media (max-width: 768px) {
+
+    /* Allow sections to size to their content on smaller screens */
+    header,
+    section,
+    footer {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    /* --- Responsive Typography --- */
+    h1,
+    .event-grid h2 {
+        font-size: 3rem;
+        /* Reduce large heading font size on smaller screens */
+    }
+
+    .event-grid h3 {
+        font-size: 2rem;
+    }
+
+    /* --- Header --- */
+    .SunBurst img {
+        max-width: 150px;
+    }
+
+    /* --- Readings Section --- */
+    .reading-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reading-item img {
+        max-width: 300px;
+    }
+}
+
+/* Small screens and mobile phones */
+@media (max-width: 480px) {
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .event-item p {
+        text-align: left;
+    }
 }
