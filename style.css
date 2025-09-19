@@ -112,6 +112,11 @@ h4 {
     text-shadow: 2px 2px 2px black;
 }
 
+.event-grid h3 {
+    margin-bottom: 20px;
+    /* Adds space below the subheading */
+}
+
 .event-item {
     display: flex;
     justify-content: space-between;
@@ -139,19 +144,19 @@ h4 {
 }
 
 /* Media Query for smaller screens */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .event-item {
         flex-direction: column;
         /* Stack date and location vertically */
-        align-items: flex-start;
-        /* Align text to the left */
-    }
+/* align-items: flex-start; */
+/* Align text to the left */
+/* }
 
-    .event-item p {
+    /* .event-item p {
         text-align: left;
         /* Align location to the left on small screens */
-    }
-}
+/* }  
+} 
 
 /* --- Readings Section --- */
 
@@ -231,6 +236,12 @@ h4 {
     text-align: center;
 }
 
+#merchandise div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Creates space between "Merchandise" and "Coming Soon!" */
+}
 
 /* Make the readings section responsive */
 @media (max-width: 768px) {
@@ -243,6 +254,13 @@ h4 {
     .reading-item img {
         width: 80%;
         max-width: 250px;
+    }
+
+    /* --- Responsive Typography --- */
+    h1,
+    .event-grid h2 {
+        font-size: 3rem;
+        /* Reduce large heading font size on smaller screens */
     }
 }
 
