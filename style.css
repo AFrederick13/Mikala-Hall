@@ -13,7 +13,6 @@ body {
     margin: 0;
 }
 
-
 /* header, section, footer styles */
 header,
 section,
@@ -32,12 +31,12 @@ footer {
     display: flex;
     flex-direction: column;
 
-    /* Background Image Styles */
-    background-image: url(images/GirlUnveiling.png);
+    /* Background Image Styles for each section */
+    background-image: url(images/unveil1.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+
 }
 
 
