@@ -266,6 +266,11 @@ footer a {
         padding: 10px 10px 10px 10px;
     }
 
+    /* Keep the header full-height on mobile to match the desktop look */
+    header {
+        min-height: 100vh;
+    }
+
     /* --- Responsive Typography --- */
     h1,
     .event-grid h2 {
