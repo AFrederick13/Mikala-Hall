@@ -13,6 +13,16 @@ body {
     margin: 0;
 }
 
+header, 
+main, 
+footer {
+    /* Background Image */
+    background-image: url(images/unveil1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* header, section, footer styles */
 header,
 section,
@@ -30,12 +40,6 @@ footer {
 
     display: flex;
     flex-direction: column;
-
-    /* Background Image Styles for each section */
-    background-image: url(images/unveil1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
 }
 
